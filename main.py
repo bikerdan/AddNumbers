@@ -2,7 +2,7 @@ import sublime_plugin
 import sublime
 
 # Extends TextCommand so that run() receives a View to modify.
-class AddLinesCommand(sublime_plugin.TextCommand):
+class AddNumbersCommand(sublime_plugin.TextCommand):
 
     def run(self, edit):
         total = 0 

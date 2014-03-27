@@ -1,6 +1,6 @@
 [
 	{
-		"caption": "Add Lines",
-		"command": "add_lines"
+		"caption": "Add Numbers",
+		"command": "add_numbers"
 	}
 ]
