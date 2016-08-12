@@ -17,7 +17,10 @@ class AddNumbersCommand(sublime_plugin.TextCommand):
             vals = vals.split('\n');
             # Add all the values
             for val in vals:
-                ints = [int(s) for s in val.split() if s.isdigit()]
-                for i in ints:
-                    total = total + float(i)
+                for item in val.split(' '):
+                    try:
+                        total = total + float(item)
+                    except:
+                        # Do nothing
+                        pass
         sublime.message_dialog(str(total))
